@@ -1,0 +1,161 @@
+/* css */
+html,
+body,
+
+#grad1 {
+    /* height: 200px;
+    background-color: red; For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(241, 244, 246), rgb(206, 230, 245), rgb(161, 186, 246));
+    opacity: 0.85;
+  }
+main,
+#map-container,
+#viewDiv {
+  padding: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.esri-icon-volume-on {
+    color: purple;
+}
+
+#map-container {
+    width: 60%;
+    height: 60%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.esriAttribution {
+    display: none;
+}
+
+.chart-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: black;
+    margin: -24px 0px 4px 0px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    max-width: 75vw;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.table {
+    margin: auto;
+}
+
+.dropdown-trigger .button {
+    border: 0px solid white;
+    background: transparent;
+    color: black;
+}
+
+.dropdown-trigger {
+    cursor: pointer;
+}
+
+:root {
+    --custom-font: 'Inter', sans-serif;
+}
+
+* {
+    font-family: var(--custom-font);
+}
+
+td.song-link {
+width: 50px;
+
+}
+
+.hover-effect:hover {
+    background-color: #898989;
+    color: whitesmoke;
+}
+
+.hover-effect:hover img {
+    filter: invert(1);
+}
+
+.dropdown {
+    margin-left: 12px;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw; /* need to classify width to stop bulma responsiveness from breaking the flex */
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px 0px 0px;
+}
+
+.text {
+    margin: 2px 0px 0px 12px;
+}
+
+td {
+    max-width: 30vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table td a {
+    margin-bottom: auto;
+}
+
+tr {
+    margin-bottom: -5px;
+}
+
+td:hover {
+    /* overflow: scroll; */
+    text-overflow:initial;
+}
+
+@media (max-width: 575px) {
+    .text {
+        display: none;
+    }
+    #map-container {
+        width: 90%;
+        height: 40%;
+    }
+    main {
+        max-width: 100vw;
+    }
+    h1 {
+        font-size: 1em;
+    }
+    .chart-title {
+        font-size: 1em;
+        margin-top: -24px;
+    }
+    .playlist-header {
+        font-size: 0.75em;
+    }
+}
